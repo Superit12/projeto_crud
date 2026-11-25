@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<%- include('partials/head.ejs') %>
+
+<body>
+    
+    <h1><%= title %></h1>
+
+    <%- include('partials/navbar.ejs') %>
+
+    <form action="/register/add" method="post">
+        <div>
+            <label>Name</label>
+            <input type="text" name="name" placeholder="Type your Name">
+        </div>
+        <div>
+            <label>Age</label>
+            <input type="number" name="age" placeholder="Type your Age">
+        </div>
+        <div>
+            <label>Email</label>
+            <input type="text" name="email" placeholder="Type your Email">
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="text" name="password" placeholder="Type your Password">
+        </div>
+        <button type="submit">Cadastrar</button>
+    </form>
+
+
+    <%- include('partials/foot.ejs') %>
+    <script src="js/main.js"></script>
+</body>
+</html>
